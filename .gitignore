@@ -27,11 +27,8 @@ __pycache__/
 venv/
 env/
 
-# Presentation deck (large binary — share separately)
-*.pptx
-
-# Report source file — PDF is the canonical version
-*.docx
+# Presentations and internal materials
+deliverables/presentations/
 
 # IDE
 .vscode/
