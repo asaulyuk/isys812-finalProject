@@ -129,6 +129,8 @@ Strategic + operational recommendations tied to signal clusters
 
 ## Team
 
-Marko Asaulyuk · Hunsa Tiwana · Jason Tate
+**Team:** Marko Asaulyuk · Hunsa Tiwana · Jason Tate
+
+**Instructor:** [Lutfus Sayeed](https://cob.sfsu.edu/directory/lutfus-sayeed) — SFSU College of Business
 
 SFSU ISYS 812 · Spring 2026
