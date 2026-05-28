@@ -1,50 +1,139 @@
-# Prescriptive Analysis: Two-Tier Framework
+# Strategic Prescriptive: Market Gap Analysis
 
-This document explains the two-tier structure of the prescriptive analysis and how each artifact maps to a layer. All artifacts in this folder were derived from the predictive escalation model outputs.
+This file is the strategic prescriptive layer — it answers: *"What product should exist that does not yet exist?"*
 
----
-
-## The Two Tiers
-
-### Strategic Prescriptive
-Answers: *where to compete, which track to run, how to position against the market.*
-
-Strategic decisions are not reversible on a weekly cadence — they require signal from multiple KPI cycles before changing course.
-
-Artifacts:
-- `opportunity_themes.md` — pain clusters extracted from predictive signals; the basis for all product and GTM decisions
-- `feature_and_gtm_strategy.md` → **Strategic Layer** section — track selection rationale and GTM positioning
-- `tradeoff_matrix.md` — explicit tradeoffs and failure modes for track selection
-- `fintech_competitive_slice.md` — where fintech cohorts fail vs large banks; informs positioning differentiation
-- `executive_one_pager.md` — decision-level summary for stakeholder communication
-
-### Operational Prescriptive
-Answers: *what specifically to build, which KPIs to track, when to escalate.*
-
-Operational decisions are reviewable weekly/monthly; they adjust execution without changing strategic direction.
-
-Artifacts:
-- `feature_and_gtm_strategy.md` → **Operational Layer** section — feature scopes, KPI targets, execution specs
-- `fallback_trigger_rules.md` — specific metric thresholds and reporting cadence that trigger a strategic track change
-- `prioritized_backlog.csv` — ranked initiatives with owner roles, KPI targets, timelines, and dependencies
+For the operational layer (what existing players should do next), see `feature_and_gtm_strategy.md`.
 
 ---
 
-## The Gap This Analysis Closes
+## Framing: Operational vs Strategic Prescriptive
 
-Most consumer finance complaints data analysis stops at "these issues occur frequently." This project goes further:
+| Operational prescriptive | Strategic prescriptive |
+|---|---|
+| Feature backlog, GTM, Track A/B execution | Structural market gaps and concept-level bets |
+| Incremental improvement in current workflows | New product direction and market creation logic |
 
-1. **Descriptive** — what complaint patterns exist (product × issue × company × customer action)
-2. **Predictive** — which signals reliably precede formal escalation (model-confirmed, not just frequent)
-3. **Strategic prescriptive** — which market position those signals support, for whom, and in which sequence
-4. **Operational prescriptive** — what to build first, who owns it, and when to change course
-
-The gap most organizations leave open is step 3: they have the data and the model but skip directly from "these complaints exist" to generic product roadmap items. The Track A/B framework closes that gap by anchoring feature priority directly to escalation signal concentration, not product intuition.
+**Branson logic applied here:** identify failures that incumbents are structurally bad at — not just temporarily bad at — then design a product whose architecture resolves that exact structural weakness. The complaint signal clusters in this dataset point to failures that are structural (billing opacity, dispute asymmetry, delinquency opacity) not accidental.
 
 ---
 
-## Key Constraints (carry into all downstream decisions)
-- Evidence is CFPB complaint-channel specific, 2014–2017 extract.
-- Model separation is strong in this dataset; use as decision-support, not causal proof.
-- Fintech cohorts are proxy-based (PayPal/Venmo, Square/Block-side); Chime not present in this extract.
-- Claims about financial outcomes or transfer to other datasets require separate testing.
+## The Five Product Directions
+
+### 1. Financial Advocate
+**Tagline:** "The first AI that negotiates on your behalf."
+
+- **Gap:** consumers are outgunned in disputes and fee challenges; no proactive advocate exists in the market.
+- **Signal evidence:** dispute and billing friction clusters — Themes 1, 2, 7.
+- **Key features:** AI dispute drafter, regulation-aware alerts, SLA escalation automation, pattern aggregation across cases.
+- **Themes addressed:** 1, 2, 7.
+
+### 2. Complaint Intelligence as a Service (CIaaS)
+**Tagline:** "The complaint-risk intelligence layer for fintech operators."
+
+- **Gap:** complaint signal is siloed in legal/ops and underused by PM and risk teams — no productized escalation intelligence layer exists.
+- **Signal evidence:** escalation model and theme concentration support proactive risk triage across all 7 themes.
+- **Key features:** escalation prediction API, product × issue risk dashboard, benchmark view, regulator-report export.
+- **Themes addressed:** all 7.
+
+### 3. Trust Score Infrastructure
+**Tagline:** "Score institutions the way institutions score consumers."
+
+- **Gap:** no mainstream, verified pre-purchase institution-behavior signal exists in consumer decision flow.
+- **Signal evidence:** expectation-gap and lifecycle-friction themes (Themes 4, 7).
+- **Key features:** transparency/resolution scores, consumer comparison view, institution benchmark dashboard.
+- **Themes addressed:** 4, 7 directly; 1, 2 indirectly.
+
+### 4. Embedded Compliance Co-Pilot
+**Tagline:** "Compliance-by-design, embedded at build time."
+
+- **Gap:** fintech teams repeatedly rebuild compliance primitives with uneven quality; no embedded SDK addresses this at design time.
+- **Signal evidence:** billing clarity, lifecycle friction, and expectation-gap clusters map to build-time design failures.
+- **Key features:** compliance SDK, disclosure components, UDAAP content linting, dispute workflow module, audit API.
+- **Themes addressed:** 1, 4, 7.
+
+### 5. Delinquency Prevention OS
+**Tagline:** "Intervene before delinquency, not after."
+
+- **Gap:** market tools are mostly post-delinquency or generic wellness; the 30–60 day pre-delinquency window is structurally under-served.
+- **Signal evidence:** delinquency/status-change terms and collections fairness pain in fintech slice.
+- **Key features:** 30–60 day risk signal, intervention UI, plain-language status alerts, hardship enrollment API.
+- **Themes addressed:** 3, 4, 5 directly; 2 indirectly.
+
+---
+
+## Concept Convergence
+
+### TrustOS (Financial Advocate + Trust Score Infrastructure)
+- **Shared infrastructure:** institution complaint aggregation, account-connection layer, regulatory knowledge base.
+- **Combined narrative:** "Know who to trust before signup, and have an advocate after signup."
+
+### SignalStack (CIaaS + Compliance Co-Pilot)
+- **Shared infrastructure:** escalation model core, policy/rules library, audit/reporting substrate.
+- **Combined narrative:** "Build safer products faster and detect complaint escalation earlier."
+
+### PreventionOS (standalone)
+- **Shared infrastructure:** account-level behavioral monitoring and intervention engine.
+- **Combined narrative:** "Own the pre-delinquency window."
+
+---
+
+## Prioritization
+
+| Rank | Cluster | Signal coverage | Time-to-market | Disruption delta | Defensibility | Reg tailwind | **Total** |
+|---|---|---:|---:|---:|---:|---:|---:|
+| **1** | SignalStack (CIaaS + Co-Pilot) | 5 | 4 | 4 | 5 | 5 | **23** |
+| **2** | TrustOS (Advocate + Trust Score) | 4 | 4 | 5 | 4 | 3 | **20** |
+| **3** | PreventionOS | 4 | 3 | 4 | 4 | 4 | **19** |
+
+**SignalStack — Rank 1:** the project's escalation prediction model is the product core in productized form. Regulatory demand supports institutional procurement momentum; developer-led embedding creates switching costs once integrated.
+
+**TrustOS — Rank 2:** highest disruption potential by inverting information asymmetry in financial decisioning. Near-term monetization less certain — adoption depends on behavior change from both consumers and institutions.
+
+**PreventionOS — Rank 3:** strong signal coverage on delinquency themes with clear upside. Lower rank reflects dependency on account-level integrations and longitudinal behavioral data to prove value.
+
+---
+
+## Product Roadmap (Swim-Lane View)
+
+### SignalStack
+
+| Track A (0–3 months) | Growth (3–12 months) | Track B (12+ months) |
+|---|---|---|
+| Compliance Co-Pilot SDK v1 | CIaaS dashboard launch | Full compliance platform suite |
+| Fee disclosure component | Escalation scoring by product × issue | Expanded regulator-report outputs |
+| UDAAP content linter | Industry benchmarking | Advanced tamper-evident logging option |
+| Dispute workflow module | Alert threshold tuning | Cross-institution intelligence layer |
+
+### TrustOS
+
+| Track A (0–3 months) | Growth (3–12 months) | Track B (12+ months) |
+|---|---|---|
+| Trust Score MVP | Advocate module launch | Full consumer trust platform |
+| CFPB score aggregation | AI dispute drafting | Open-banking expansion |
+| Consumer comparison layer | SLA timeline support | Tamper-evident score publication option |
+| Institution score v1 | Institution benchmark dashboard | Policy/partner channel expansion |
+
+### PreventionOS
+
+| Pre-build (Track A parallel) | MVP (3–9 months) | Scale / Converge (12+ months) |
+|---|---|---|
+| Data partnership setup | 30-day risk signaling | Charge-off reduction validation |
+| Behavioral model prototyping | Intervention options UI | Integration into hardship programs |
+| Status messaging design | Plain-language alerts | Possible integration with TrustOS/SignalStack |
+
+---
+
+## Competitor Landscape
+
+| Cluster | Closest known players | Key differentiator | Gap status |
+|---|---|---|---|
+| TrustOS | Trustpilot-style review stacks | Verified complaint-behavior scoring vs self-selected opinions | No direct competitor identified |
+| SignalStack | Sardine / Feedzai / Oscilar / Ballerine | Complaint-escalation intelligence vs fraud/crime focus | No direct competitor identified |
+| PreventionOS | Budgeting apps / debt collectors | Pre-delinquency intervention vs post-hoc handling | No direct competitor identified |
+
+---
+
+## Constraints
+- All concepts are forward-looking market hypotheses derived from complaint signal — not validated business cases or investment recommendations.
+- Evidence base is CFPB complaint-channel, 2014–2017 extract.
+- Fintech cohorts are proxy-based; Chime is not present in this extract.

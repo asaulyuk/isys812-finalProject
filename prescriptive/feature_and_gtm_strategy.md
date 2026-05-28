@@ -1,44 +1,22 @@
-# Prescriptive Feature and GTM Strategy
+# Operational Prescriptive: Feature and GTM Strategy
 
-Primary objective for this project phase: convert predictive signal clusters into actionable feature and go-to-market decisions.
+This file is the operational prescriptive layer — it answers: *"What should existing players do next with these signals?"*
 
-This file is organized in two layers:
-- **Strategic layer** — which market to enter, which track to run, how to position.
-- **Operational layer** — what specifically to build, scope of each feature, execution KPIs.
+For the strategic layer (what new products should exist that don't yet exist), see `prescriptive_strategic_gap_analysis.md`.
 
 ---
 
-## Strategic Layer
+## Track A (Primary): Startup Strategy, 0–3 months
 
-### Track Selection
+Default execution path. Targets consumer-facing friction in high-escalation product lines. Optimizes for speed, early signal capture, and differentiation.
 
-**Track A (Primary): Startup Strategy, 0–3 months**
-- Default execution path.
-- Targets consumer-facing friction in high-escalation product lines.
-- Optimizes for speed, early signal capture, and differentiation.
-
-**Track B (Fallback): Enterprise Strategy, 12+ months**
-- Activated only when Track A trigger thresholds fail (see `fallback_trigger_rules.md`).
-- Targets enterprise operations/compliance leadership.
-- Optimizes for governance, traceability, and institutional scale.
-
-### GTM Strategy — Track A
+### GTM Strategy
 - **Segment priority:** users exposed to high-friction product lines (mortgage, debt collection, bank account/service, credit reporting)
 - **Positioning:** "No surprise charges. No black-box disputes. Clear status at every step."
 - **Launch motion:** single wedge segment first, weekly feedback loop, fast UI/process iteration
 - **Proof metrics for external messaging:** time-to-resolution reduction, decrease in escalation proxy, repeat-complaint reduction
 
-### GTM Strategy — Track B
-- **Segment priority:** enterprise operations/compliance leadership and risk owners
-- **Positioning:** "Reduce complaint-operational risk with measurable governance and traceability."
-- **Adoption motion:** pilot by business unit, then phased roll-out with control metrics
-- **Proof metrics for external messaging:** SLA compliance, complaint recurrence, governance incident rate, sustained trust metrics
-
----
-
-## Operational Layer
-
-### Feature Execution — Track A
+### Feature Execution
 
 1. **Transparent Billing Explainer**
    - Scope: fee decomposition, APR impact preview, "why this charge?" trace
@@ -55,7 +33,19 @@ This file is organized in two layers:
    - Linked themes: 3 (Delinquency and Account-Status Stress), 4 (Lifecycle Journey Breaks)
    - Primary KPI: repeat complaint rate down ≥8%
 
-### Feature Execution — Track B
+---
+
+## Track B (Fallback): Enterprise Strategy, 12+ months
+
+Activated only when Track A trigger thresholds fail for 6–8 consecutive weeks (see `fallback_trigger_rules.md`). Targets enterprise operations/compliance leadership. Optimizes for governance, traceability, and institutional scale.
+
+### GTM Strategy
+- **Segment priority:** enterprise operations/compliance leadership and risk owners
+- **Positioning:** "Reduce complaint-operational risk with measurable governance and traceability."
+- **Adoption motion:** pilot by business unit, then phased roll-out with control metrics
+- **Proof metrics for external messaging:** SLA compliance, complaint recurrence, governance incident rate, sustained trust metrics
+
+### Feature Execution
 
 1. **Complaint Orchestration Layer**
    - Scope: cross-team case routing, SLA policy engine, audit trail
@@ -78,5 +68,5 @@ This file is organized in two layers:
 
 ## Link Between Tracks
 - Track A is the default execution path.
-- Track B activates only if defined trigger conditions are met for a sustained window (see `fallback_trigger_rules.md`).
-- Both tracks reuse the same core opportunity themes in `opportunity_themes.md`.
+- Track B activates only if defined trigger conditions are met (see `fallback_trigger_rules.md`).
+- Both tracks draw from the same complaint signal clusters in `opportunity_themes.md`.
