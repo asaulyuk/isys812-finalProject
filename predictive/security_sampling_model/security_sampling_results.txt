@@ -1,0 +1,26 @@
+Security Sampling Model Results
+===============================
+Rows: 755,671
+Positive rate: 0.9777
+Repeats: 10
+Train/test split per repeat: 10% / 90%
+
+Original ROC AUC: 1.0000
+Repeated-sampling mean ROC AUC: 1.0000
+Repeated-sampling ROC AUC std: 0.0000
+Repeated-sampling ROC AUC min/max: 1.0000 / 1.0000
+Original average precision: 1.0000
+Repeated-sampling mean average precision: 1.0000
+Close to original within 0.0500 ROC AUC: True
+
+Per-repeat metrics:
+  - repeat 01: seed=42, n_train=75,567, n_test=680,104, ROC AUC=1.0000, AP=1.0000
+  - repeat 02: seed=43, n_train=75,567, n_test=680,104, ROC AUC=1.0000, AP=1.0000
+  - repeat 03: seed=44, n_train=75,567, n_test=680,104, ROC AUC=1.0000, AP=1.0000
+  - repeat 04: seed=45, n_train=75,567, n_test=680,104, ROC AUC=1.0000, AP=1.0000
+  - repeat 05: seed=46, n_train=75,567, n_test=680,104, ROC AUC=1.0000, AP=1.0000
+  - repeat 06: seed=47, n_train=75,567, n_test=680,104, ROC AUC=1.0000, AP=1.0000
+  - repeat 07: seed=48, n_train=75,567, n_test=680,104, ROC AUC=1.0000, AP=1.0000
+  - repeat 08: seed=49, n_train=75,567, n_test=680,104, ROC AUC=1.0000, AP=1.0000
+  - repeat 09: seed=50, n_train=75,567, n_test=680,104, ROC AUC=1.0000, AP=1.0000
+  - repeat 10: seed=51, n_train=75,567, n_test=680,104, ROC AUC=1.0000, AP=1.0000

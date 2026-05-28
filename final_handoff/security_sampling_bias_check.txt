@@ -1,0 +1,17 @@
+Second Security Model: Random-Sampling Bias Check
+=================================================
+
+To test whether the escalation model was overly dependent on a timeline-based split, a second security model was run using repeated random sampling. In each run, 10% of the CFPB-labeled data was selected as the training sample and the remaining 90% was held out for testing. This was repeated 10 times with stratification so that the formal-complaint rate stayed comparable across train and test samples.
+
+Original model ROC AUC: 1.0000
+Repeated 10/90 model mean ROC AUC: 1.0000
+ROC AUC gap vs original: 0.0000
+Repeated 10/90 model ROC AUC range: 1.0000 to 1.0000
+Original model average precision: 1.0000
+Repeated 10/90 model mean average precision: 1.0000
+Close-to-original threshold used: 0.0500 ROC AUC
+
+The repeated random-sampling model produced results close to the original model, which reduces concern that the original performance was only an artifact of a single time-period split.
+
+Interpretation for the report:
+This is best described as a robustness or security check, not as proof that all bias has been removed. The target variable is still a proxy for escalation, and complaint language can be subjective. However, getting similar performance when the model is trained on repeated random 10% samples and tested on the remaining 90% supports the claim that the original model is not solely driven by one chronological slice of the data.

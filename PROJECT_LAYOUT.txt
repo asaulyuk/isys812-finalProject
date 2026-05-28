@@ -1,0 +1,22 @@
+ISYS 812 — project layout (paths resolve from repo root via project_paths.py)
+
+  Finance / fintech MI (primary): filter dashboard **Source → CFPB**; see README.
+
+  descriptive/     exploratory stats, export-clean notebook, descriptive analysis
+  predictive/      models / optional NLP topic clusters
+  prescriptive/    actions and recommendations
+  final_handoff/   final report, source bundle, presentation, handoff notes
+  temp_trash/      generated caches/checkpoints/system files staged for review/deletion
+
+Data CSVs stay in the project root (e.g. master_customer_behavior_v3-1.csv,
+master_customer_behavior_clean.csv).
+
+Run examples (from repo root):
+
+  python descriptive/run_descriptive_analysis.py
+  python predictive/run_optional_nlp_topic_clusters.py --clusters 25
+  python launch_dashboard.py
+
+Dashboard: streamlit_dashboard_app.py and launch_dashboard.py stay at the repo root.
+
+Presentation deck: final_handoff/presentations/Finalpresentation.pptx.

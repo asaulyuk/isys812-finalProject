@@ -1,0 +1,21 @@
+Escalation Validation Report
+============================
+Rows: 755,671
+Positive rate: 0.9777
+
+Random split ROC AUC (full): 1.0000
+Temporal split ROC AUC (full): 1.0000
+Product-holdout ROC AUC (full): 1.0000
+Random split ROC AUC (product-only): 0.9492
+Random split ROC AUC (text-only): 1.0000
+ECE-like: 0.0018
+P95 abs phrase delta: 0.0005
+
+Checks:
+  - temporal_generalization: PASS
+  - unseen_product_generalization: PASS
+  - incremental_gain_over_product_only: PASS
+  - calibration_usable: PASS
+  - not_over_sensitive_to_canned_phrase: PASS
+
+Overall pass rate: 100.00%

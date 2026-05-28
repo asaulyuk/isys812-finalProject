@@ -1,0 +1,9 @@
+priority,track,initiative,owner_role,expected_business_effect,primary_kpi,target_window,timeline,deps_and_risks
+1,A,Transparent Billing Explainer,Product Manager,Reduce charge confusion and fee-driven escalations,Escalation proxy rate,">=5% relative reduction",Weeks 1-6,"Needs billing event instrumentation; risk of unclear UX copy"
+2,A,Dispute Fast-Lane,Operations Lead,Shorten dispute handling latency and reduce formal-channel migration,Median resolution cycle time,">=15% reduction",Weeks 1-8,"Needs workflow ownership and SLA policy baseline"
+3,A,Lifecycle Guardrails (open/close/payoff),Product Manager,Reduce transition-stage friction and repeat complaints,Repeat complaint rate,">=8% reduction",Weeks 3-10,"Needs event-state model; risk of scope creep"
+4,A,Targeted GTM Wedge Campaign,Marketing Lead,Increase adoption in high-friction product segment,Active feature adoption in pilot segment,">=20% by week 6",Weeks 2-8,"Needs segment definitions; risk of overclaiming"
+5,B,Complaint Orchestration Layer,Operations + Engineering Manager,Improve consistency and traceability across case handling,SLA compliance rate,">=95% compliance",Quarter 2+,"Higher implementation overhead; integration risk"
+6,B,Policy and Explainability Controls,Risk/Compliance Lead,Lower governance incidents and improve audit readiness,Governance incident rate,"Downward trend month-over-month",Quarter 2+,"Needs legal/compliance alignment"
+7,B,Portfolio Risk Monitor,Data/Product Analytics Lead,Enable proactive issue management at product x issue level,Threshold alert precision,">=0.70 precision at alert level",Quarter 2+,"Risk of alert fatigue without tuning"
+8,B,Fraud/Scam Specialized Workflow,Risk Operations Lead,Separate fraud-type cases from generic complaint paths,Fraud-case resolution quality score,">=10% improvement",Quarter 2+,"Needs dedicated process and staffing"

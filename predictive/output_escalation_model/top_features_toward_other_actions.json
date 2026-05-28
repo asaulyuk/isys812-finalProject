@@ -1,0 +1,182 @@
+[
+  {
+    "feature": "tfidf__fraud",
+    "weight": -8.901284215295645
+  },
+  {
+    "feature": "tfidf__fraud scam",
+    "weight": -6.421657376213698
+  },
+  {
+    "feature": "tfidf__scam",
+    "weight": -6.421657376213698
+  },
+  {
+    "feature": "tfidf__cancelling account",
+    "weight": -6.37468645713997
+  },
+  {
+    "feature": "tfidf__cancelling",
+    "weight": -6.37468645713997
+  },
+  {
+    "feature": "tfidf__closing cancelling",
+    "weight": -6.37468645713997
+  },
+  {
+    "feature": "tfidf__theft fraud",
+    "weight": -4.082425618287574
+  },
+  {
+    "feature": "tfidf__theft",
+    "weight": -4.082425618287574
+  },
+  {
+    "feature": "tfidf__embezzlement",
+    "weight": -4.082425618287574
+  },
+  {
+    "feature": "tfidf__identity theft",
+    "weight": -4.082425618287574
+  },
+  {
+    "feature": "tfidf__fraud embezzlement",
+    "weight": -4.082425618287574
+  },
+  {
+    "feature": "tfidf__closing",
+    "weight": -3.936026561844626
+  },
+  {
+    "feature": "tfidf__identity",
+    "weight": -3.791993989277236
+  },
+  {
+    "feature": "tfidf__scam fraud",
+    "weight": -3.210828688106849
+  },
+  {
+    "feature": "tfidf__account closing",
+    "weight": -3.187343228569985
+  },
+  {
+    "feature": "product__product_service_Credit card",
+    "weight": -2.5295632576288107
+  },
+  {
+    "feature": "tfidf__account credit",
+    "weight": -2.47078908586627
+  },
+  {
+    "feature": "product__product_service_Money transfers",
+    "weight": -2.341576844219759
+  },
+  {
+    "feature": "tfidf__embezzlement identity",
+    "weight": -2.041212809143787
+  },
+  {
+    "feature": "tfidf__embezzlement credit",
+    "weight": -2.041212809143787
+  },
+  {
+    "feature": "product__product_service_Other financial service",
+    "weight": -1.9134128107955422
+  },
+  {
+    "feature": "product__product_service_Prepaid card",
+    "weight": -1.8583421046479616
+  },
+  {
+    "feature": "tfidf__account",
+    "weight": -1.6007851551408823
+  },
+  {
+    "feature": "tfidf__scam money",
+    "weight": -1.5418333831234041
+  },
+  {
+    "feature": "tfidf__scam prepaid",
+    "weight": -1.4453976191851137
+  },
+  {
+    "feature": "tfidf__scam financial",
+    "weight": -0.8534167449151836
+  },
+  {
+    "feature": "tfidf__money transfers",
+    "weight": -0.8361127269717957
+  },
+  {
+    "feature": "tfidf__transfers",
+    "weight": -0.8361127269717957
+  },
+  {
+    "feature": "tfidf__prepaid card",
+    "weight": -0.6994979310594657
+  },
+  {
+    "feature": "tfidf__prepaid",
+    "weight": -0.6994979310594657
+  },
+  {
+    "feature": "tfidf__financial service",
+    "weight": -0.6514108786897982
+  },
+  {
+    "feature": "tfidf__financial",
+    "weight": -0.6514108786897982
+  },
+  {
+    "feature": "tfidf__money",
+    "weight": -0.3230894112290466
+  },
+  {
+    "feature": "product__product_service_Virtual currency",
+    "weight": -0.09339298182099436
+  },
+  {
+    "feature": "tfidf__credited consumer",
+    "weight": 0.0007131036838293893
+  },
+  {
+    "feature": "tfidf__vehicle consumer",
+    "weight": 0.001324575881869771
+  },
+  {
+    "feature": "tfidf__vehicle lender",
+    "weight": 0.001324575881869771
+  },
+  {
+    "feature": "tfidf__lender consumer",
+    "weight": 0.0017161997621230277
+  },
+  {
+    "feature": "tfidf__repossessed",
+    "weight": 0.0023415490665780626
+  },
+  {
+    "feature": "tfidf__sold vehicle",
+    "weight": 0.0023415490665780626
+  },
+  {
+    "feature": "tfidf__repossessed sold",
+    "weight": 0.0023415490665780626
+  },
+  {
+    "feature": "tfidf__lender repossessed",
+    "weight": 0.0023415490665780626
+  },
+  {
+    "feature": "tfidf__vehicle",
+    "weight": 0.002649151763739542
+  },
+  {
+    "feature": "tfidf__credit shopping",
+    "weight": 0.0028105041085200173
+  },
+  {
+    "feature": "tfidf__sold",
+    "weight": 0.0028657641609475463
+  }
+]

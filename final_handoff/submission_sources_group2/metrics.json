@@ -1,0 +1,20 @@
+{
+  "n_rows_cfpb_labeled": 755671,
+  "n_train_after_subsample": 157128,
+  "n_test": 434241,
+  "prevalence_formal_complaint_test": 0.9776552651638145,
+  "split": {
+    "split": "temporal",
+    "train_end_year": 2015,
+    "train_year_min": 2014,
+    "train_year_max": 2015,
+    "test_year_min": 2016,
+    "test_year_max": 2017
+  },
+  "product_only_roc_auc": 0.9177587078312577,
+  "product_only_average_precision": 0.9967087502350518,
+  "test_score_max_non_formal": 0.8187384331853244,
+  "test_score_min_formal": 0.9314401813807965,
+  "roc_auc": 1.0,
+  "average_precision": 1.0
+}

@@ -1,0 +1,86 @@
+{
+  "n_clusters": 20,
+  "n_rows": 49189,
+  "topics": {
+    "0": {
+      "label": "mortgage broker, originator, broker mortgage, originator mortgage, application originator, broker, application, mortgage",
+      "count": 903
+    },
+    "1": {
+      "label": "collection foreclosure, foreclosure, modification collection, modification, loan modification, foreclosure mortgage, mortgage, loan",
+      "count": 6889
+    },
+    "2": {
+      "label": "use credit, use, improper use, improper, credit, credit report, report, report credit",
+      "count": 253
+    },
+    "3": {
+      "label": "credit, information credit, incorrect information, incorrect, information, credit report, report credit, report",
+      "count": 4690
+    },
+    "4": {
+      "label": "servicing payments, payments escrow, escrow, escrow account, account mortgage, loan servicing, servicing, payments",
+      "count": 5192
+    },
+    "5": {
+      "label": "credit card, card, credit, billing, billing disputes, disputes credit, disputes, protection",
+      "count": 4588
+    },
+    "6": {
+      "label": "debt, collect, cont attempts, collect debt, debt owed, attempts, attempts collect, owed",
+      "count": 5406
+    },
+    "7": {
+      "label": "taking threatening, threatening illegal, illegal, action debt, threatening, illegal action, action, taking",
+      "count": 902
+    },
+    "8": {
+      "label": "communication tactics, tactics, tactics debt, communication, debt collection, debt, collection, llc communication",
+      "count": 2485
+    },
+    "9": {
+      "label": "account service, bank account, service, bank, deposits withdrawals, deposits, withdrawals, withdrawals bank",
+      "count": 2688
+    },
+    "10": {
+      "label": "statements representation, false statements, representation debt, statements, representation, false, debt collection, debt",
+      "count": 1128
+    },
+    "11": {
+      "label": "credit reporting, reporting, investigation credit, reporting company, company investigation, investigation, credit, company",
+      "count": 972
+    },
+    "12": {
+      "label": "debt, debt debt, disclosure, disclosure verification, verification, verification debt, debt collection, collection",
+      "count": 2398
+    },
+    "13": {
+      "label": "account, account opening, closing management, management bank, opening closing, opening, closing, management",
+      "count": 2121
+    },
+    "14": {
+      "label": "consumer, consumer loan, loan, lease, loan lease, lease consumer, managing, managing loan",
+      "count": 1957
+    },
+    "15": {
+      "label": "settlement process, costs, costs mortgage, process costs, settlement, process, mortgage, llc settlement",
+      "count": 480
+    },
+    "16": {
+      "label": "credit, score, credit score, unable credit, score credit, unable, report, credit report",
+      "count": 968
+    },
+    "17": {
+      "label": "student, student loan, loan, lender servicer, servicer student, servicer, dealing lender, dealing",
+      "count": 1482
+    },
+    "18": {
+      "label": "info debt, contact sharing, sharing, sharing info, improper contact, info, contact, improper",
+      "count": 1165
+    },
+    "19": {
+      "label": "credit, information, incorrect information, information credit, incorrect, report credit, report, credit report",
+      "count": 2522
+    }
+  }
+}

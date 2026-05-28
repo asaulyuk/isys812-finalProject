@@ -1,0 +1,34 @@
+predictive changelog
+====================
+
+2026-04-24
+----------
+1) Added compatibility launcher:
+   - File: predictive/train_escalation_model.py
+   - Purpose: keep documented command path working while preserving teammate
+     implementation in predictive/predictive/train_escalation_model.py.
+   - Behavior: loads nested implementation and forwards CLI execution to main().
+
+2) Fixed notebook root detection:
+   - File: predictive/predictive/predictive_workflows.ipynb (setup cell)
+   - Issue: FileNotFoundError when Jupyter cwd was not repo root or immediate parent.
+   - Fix: walk upward through cwd parents until project_paths.py is found.
+
+3) Documentation refresh:
+   - File: predictive/README.txt
+   - Added: script map, compatibility path note, notebook behavior note, and
+     model-interpretation guardrails for near-perfect metrics.
+
+4) Added validation harness:
+   - File: predictive/run_escalation_validation.py
+   - Purpose: expand current model with repeatable robustness tests before
+     production-style claims.
+   - Tests: temporal stability, unseen-product holdout, feature-family ablations,
+     calibration ECE-like check, and phrase-sensitivity probe.
+   - Output: predictive/output_escalation_validation/validation_report.{json,txt}
+
+5) Fixed broken topic-cluster entrypoint:
+   - File: predictive/run_optional_nlp_topic_clusters.py
+   - Issue: file content had README text, causing SyntaxError on import.
+   - Fix: replaced with compatibility wrapper forwarding to
+     predictive/predictive/run_optional_nlp_topic_clusters.py

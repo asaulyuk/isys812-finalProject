@@ -1,0 +1,145 @@
+{
+  "dataset": {
+    "n_rows_cfpb_labeled": 755671,
+    "positive_rate_formal_complaint": 0.9777270796418018
+  },
+  "method": {
+    "description": "Repeated stratified random sampling with 10% train and 90% test.",
+    "repeats": 10,
+    "train_size": 0.1,
+    "test_size": 0.9,
+    "base_random_state": 42
+  },
+  "security_sampling_results": [
+    {
+      "repeat": 1,
+      "random_state": 42,
+      "n_train": 75567,
+      "n_test": 680104,
+      "train_prevalence_formal_complaint": 0.9777283734963674,
+      "test_prevalence_formal_complaint": 0.9777269358803947,
+      "roc_auc": 0.9999999999999999,
+      "average_precision": 0.9999999999999999
+    },
+    {
+      "repeat": 2,
+      "random_state": 43,
+      "n_train": 75567,
+      "n_test": 680104,
+      "train_prevalence_formal_complaint": 0.9777283734963674,
+      "test_prevalence_formal_complaint": 0.9777269358803947,
+      "roc_auc": 1.0,
+      "average_precision": 1.0
+    },
+    {
+      "repeat": 3,
+      "random_state": 44,
+      "n_train": 75567,
+      "n_test": 680104,
+      "train_prevalence_formal_complaint": 0.9777283734963674,
+      "test_prevalence_formal_complaint": 0.9777269358803947,
+      "roc_auc": 1.0,
+      "average_precision": 1.0
+    },
+    {
+      "repeat": 4,
+      "random_state": 45,
+      "n_train": 75567,
+      "n_test": 680104,
+      "train_prevalence_formal_complaint": 0.9777283734963674,
+      "test_prevalence_formal_complaint": 0.9777269358803947,
+      "roc_auc": 1.0,
+      "average_precision": 1.0
+    },
+    {
+      "repeat": 5,
+      "random_state": 46,
+      "n_train": 75567,
+      "n_test": 680104,
+      "train_prevalence_formal_complaint": 0.9777283734963674,
+      "test_prevalence_formal_complaint": 0.9777269358803947,
+      "roc_auc": 1.0,
+      "average_precision": 0.9999999999999999
+    },
+    {
+      "repeat": 6,
+      "random_state": 47,
+      "n_train": 75567,
+      "n_test": 680104,
+      "train_prevalence_formal_complaint": 0.9777283734963674,
+      "test_prevalence_formal_complaint": 0.9777269358803947,
+      "roc_auc": 1.0,
+      "average_precision": 1.0
+    },
+    {
+      "repeat": 7,
+      "random_state": 48,
+      "n_train": 75567,
+      "n_test": 680104,
+      "train_prevalence_formal_complaint": 0.9777283734963674,
+      "test_prevalence_formal_complaint": 0.9777269358803947,
+      "roc_auc": 1.0,
+      "average_precision": 1.0
+    },
+    {
+      "repeat": 8,
+      "random_state": 49,
+      "n_train": 75567,
+      "n_test": 680104,
+      "train_prevalence_formal_complaint": 0.9777283734963674,
+      "test_prevalence_formal_complaint": 0.9777269358803947,
+      "roc_auc": 1.0,
+      "average_precision": 0.9999999999999999
+    },
+    {
+      "repeat": 9,
+      "random_state": 50,
+      "n_train": 75567,
+      "n_test": 680104,
+      "train_prevalence_formal_complaint": 0.9777283734963674,
+      "test_prevalence_formal_complaint": 0.9777269358803947,
+      "roc_auc": 1.0,
+      "average_precision": 1.0
+    },
+    {
+      "repeat": 10,
+      "random_state": 51,
+      "n_train": 75567,
+      "n_test": 680104,
+      "train_prevalence_formal_complaint": 0.9777283734963674,
+      "test_prevalence_formal_complaint": 0.9777269358803947,
+      "roc_auc": 1.0,
+      "average_precision": 0.9999999999999999
+    }
+  ],
+  "security_sampling_summary": {
+    "roc_auc": {
+      "mean": 1.0,
+      "std": 3.700743415417188e-17,
+      "min": 0.9999999999999999,
+      "max": 1.0
+    },
+    "average_precision": {
+      "mean": 1.0,
+      "std": 7.401486830834377e-17,
+      "min": 0.9999999999999999,
+      "max": 1.0
+    }
+  },
+  "comparison_to_original": {
+    "original_metrics_path": "/Users/asauliuk/Library/CloudStorage/OneDrive-SanFranciscoStateUniversity/ISYS812-finalProject/predictive/output_escalation_model/metrics.json",
+    "original_split": {
+      "split": "temporal",
+      "train_end_year": 2015,
+      "train_year_min": 2014,
+      "train_year_max": 2015,
+      "test_year_min": 2016,
+      "test_year_max": 2017
+    },
+    "original_roc_auc": 1.0,
+    "original_average_precision": 1.0,
+    "roc_auc_gap_vs_original": 0.0,
+    "close_threshold_roc_auc": 0.05,
+    "close_to_original": true
+  }
+}

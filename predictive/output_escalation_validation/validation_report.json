@@ -1,0 +1,73 @@
+{
+  "dataset": {
+    "n_rows": 755671,
+    "positive_rate": 0.9777270796418018
+  },
+  "random_split_full": {
+    "roc_auc": 1.0,
+    "average_precision": 1.0,
+    "n_test": 151135,
+    "prevalence_test": 0.9777285208588348
+  },
+  "temporal_split_full": {
+    "roc_auc": 1.0,
+    "average_precision": 1.0,
+    "n_test": 434241,
+    "prevalence_test": 0.9776552651638145,
+    "split_meta": {
+      "split": "temporal",
+      "train_end_year": 2015,
+      "train_year_min": 2014,
+      "train_year_max": 2015,
+      "test_year_min": 2016,
+      "test_year_max": 2017
+    }
+  },
+  "product_holdout_full": {
+    "roc_auc": 1.0,
+    "average_precision": 1.0,
+    "n_test": 4895,
+    "prevalence_test": 0.7716036772216548,
+    "holdout_products": [
+      "Other financial service",
+      "Prepaid card",
+      "Virtual currency"
+    ]
+  },
+  "ablation_product_only": {
+    "roc_auc": 0.9492388066619388,
+    "average_precision": 0.9981629876507812,
+    "n_test": 151135,
+    "prevalence_test": 0.9777285208588348
+  },
+  "ablation_text_only": {
+    "roc_auc": 1.0,
+    "average_precision": 0.9999999999999999,
+    "n_test": 151135,
+    "prevalence_test": 0.9777285208588348
+  },
+  "calibration": {
+    "bins": 10,
+    "expected_calibration_error_like": 0.0017873192390574389
+  },
+  "phrase_sensitivity": {
+    "n_probe_rows": 1000,
+    "mean_score_delta": 0.0009117690086422254,
+    "p95_abs_score_delta": 0.00046573796703508474
+  },
+  "thresholds": {
+    "temporal_roc_auc_min": 0.75,
+    "unseen_product_roc_auc_min": 0.7,
+    "full_minus_product_only_auc_min": 0.02,
+    "ece_like_max": 0.08,
+    "p95_phrase_delta_max": 0.2
+  },
+  "checks": {
+    "temporal_generalization": true,
+    "unseen_product_generalization": true,
+    "incremental_gain_over_product_only": true,
+    "calibration_usable": true,
+    "not_over_sensitive_to_canned_phrase": true
+  },
+  "pass_rate": 1.0
+}

@@ -1,0 +1,204 @@
+Speaker Notes - Concise Bullet Reference
+Finalpresentation.pptx
+
+Slide 1 - Title
+- Introduce the project: Fintech Marketing Intelligence.
+- Main idea: use complaint data as a signal for escalation risk and product strategy.
+- Mention focus: CFPB complaint patterns, predictive modeling, and fintech recommendations.
+- Team: Hunsa Tiwana, Jason Tate, Marko Asaulyuk.
+
+Slide 2 - Agenda
+- Data set overview.
+- Driving question.
+- Data cleaning process.
+- Five analysis questions.
+- Escalation prediction model.
+- Strategic recommendations.
+- Learnings and Q&A.
+
+Slide 3 - The Data Set
+- Core file: `master_customer_behavior_clean.csv`.
+- Main analysis uses CFPB records.
+- CFPB rows are useful because they include product, company, issue type, action, and complaint text.
+- Frame the data as complaint-channel intelligence.
+
+Slide 4 - About the Data
+- Data combines customer behavior records from multiple sources.
+- CFPB is the core source for structured complaint analysis.
+- Key fields: company, product/service, issue, complaint text, sentiment, customer action.
+- Important limitation: this is not a general population survey.
+
+Slide 5 - Shape and Size
+- Total rows: 777,867.
+- Total columns: 17.
+- CFPB core subset: 755,671 rows.
+- CFPB time concentration: 2014 to 2017.
+- PayPal/Venmo proxy cohort: 3,655 rows.
+- Square/Block proxy cohort: 687 rows.
+- Large-bank baseline: 167,474 rows.
+- Point to make: large enough for patterns, but still complaint-channel specific.
+
+Slide 6 - Missing Values
+- URL missing: 2,702 rows.
+- Issue missing: 22,196 rows, mainly non-CFPB rows.
+- Country missing: 26,937 rows.
+- URL and country are not used as model features.
+- CFPB rows used in the core analysis are complete on issue.
+- Point to make: missing values do not block the main analysis.
+
+Slide 7 - Driving Question
+- Transition slide.
+- Say: now that we know the data, the next step is the research question.
+- The project is not only about counting complaints.
+- It is about using complaint patterns to guide product and strategy decisions.
+
+Slide 8 - Driving Question Text
+- Main question: how do CFPB complaint patterns signal escalation risk?
+- Inputs considered: issue type, product line, company, customer action.
+- Strategic output: which startup and enterprise opportunities does the signal point to?
+- Point to make: analytics should connect to action.
+
+Slide 9 - How Does Our Analysis Answer It?
+- Descriptive: mapped complaint volume, escalation rates, and issue patterns.
+- Predictive: built logistic regression using complaint text and product type.
+- Prescriptive strategic: translated signal clusters into product recommendations.
+- Prescriptive operational: identified market gaps and future product opportunities.
+- Point to make: each layer builds on the previous layer.
+
+Slide 10 - Data Cleaning
+- Transition into method.
+- Cleaning made the dataset consistent for analysis, modeling, and dashboard use.
+- Goal: preserve useful rows while removing unreliable required-field gaps.
+
+Slide 11 - Step-by-Step Process
+- Dropped the rating column.
+- Defined which fields could be empty.
+- Removed rows missing required analytical fields.
+- Parsed issue from `raw_metadata`.
+- Created `sentiment_revised_label`.
+- Created `trends_keyword` for Google Trends rows.
+- Exported standardized clean file.
+- Point to make: cleaning rules were repeatable and shared across workflows.
+
+Slide 12 - Data Analysis: Five Questions
+- Transition to findings.
+- The five questions move from descriptive patterns to predictive signal.
+- End goal: decide whether the signal is strong enough for prioritization.
+
+Slide 13 - Question 1: Product and Issue Volume
+- Method: count complaints by product type and issue category.
+- Scope: CFPB-only subset.
+- Highest-volume products: mortgage, debt collection, bank account/service, credit reporting.
+- Dominant issues: billing disputes, debts not owed, servicing failures.
+- Point to make: complaint volume is concentrated, not evenly spread.
+
+Slide 14 - Visual Evidence for Question 1
+- Use this slide to reinforce concentration.
+- A few product/issue combinations carry a large share of complaint burden.
+- Product teams should prioritize high-volume friction zones first.
+- Link to recommendations later: billing clarity, dispute handling, lifecycle guardrails.
+
+Slide 15 - Question 2: Formal Complaint Distribution
+- Method: count customer action types and formal complaint share.
+- Formal complaints: about 97.8%.
+- Other outcomes: about 2.2%.
+- Point to make: CFPB data is already escalation-heavy.
+- Caveat: not a general satisfaction sample.
+- Use as risk intelligence, not broad sentiment.
+
+Slide 16 - Question 3: Major vs Smaller Players
+- Method: compare company complaint profiles after minimum-row filtering.
+- Major players: higher complaint counts and more stable patterns.
+- Smaller/fintech cohorts: noisier but strategically useful.
+- PayPal/Venmo: payment, fraud/scam, transaction, funds-availability friction.
+- Square/Block-side: debt collection, verification, communication tactics.
+- Point to make: fintech pain differs from large-bank pain.
+
+Slide 17 - Visual Evidence for Question 3
+- Contrast large banks vs fintech proxy cohorts.
+- Large banks: more mortgage, servicing, and account-heavy issues.
+- Fintech: payment reliability, fraud handling, transaction clarity, collections transparency.
+- Point to make: do not use a one-size-fits-all financial-services strategy.
+
+Slide 18 - Question 4: Predicting Escalation
+- Model: logistic regression classifier.
+- Inputs: complaint text and product line.
+- Training years: 2014-2015.
+- Test years: 2016-2017.
+- Key signal terms: billing, fee, delinquent, disputes, APR.
+- Text carries more weight than product type alone.
+- Fraud/scam cases likely need a separate workflow.
+
+Slide 19 - Question 5: Signal Stability
+- Five validation checks were used.
+- Tested future-year performance.
+- Tested unseen product performance.
+- Checked impact of removing input types.
+- Checked calibration of confidence scores.
+- Checked sensitivity to generic complaint phrases.
+- All five checks passed.
+- Calibration error: 0.0018, below 0.08 threshold.
+- Point to make: stable enough for decision support.
+
+Slide 20 - Escalation Prediction Model
+- Transition to model details.
+- The model helps prioritize likely escalation risk.
+- It is not meant to replace human judgment.
+- Use it as a product and operations signal.
+
+Slide 21 - About the Model
+- Converts complaint text into numeric features.
+- Learns which words and products are associated with escalation.
+- Outputs probability from 0 to 1.
+- Strengths: interpretable, fast, scalable.
+- Limitation: based on wording patterns, not deep reasoning.
+- Best use: early warning and prioritization.
+
+Slide 22 - Results
+- Temporal ROC AUC: 1.0.
+- Average precision: 1.0.
+- Product-only ROC AUC: about 0.918.
+- Interpretation: text adds major predictive value beyond product category.
+- Caveat: near-perfect performance is dataset-specific.
+- Say clearly: strong separability, not causal proof.
+
+Slide 23 - Strategic Recommendations
+- Transition from findings to action.
+- Recommendations come from the complaint themes and fintech cohort patterns.
+- Goal: identify what fintech PMs should build next.
+- Separate fast product fixes from longer-term strategic opportunities.
+
+Slide 24 - What Fintech PMs Should Build Next
+- Payment Assurance Layer:
+  transfer status trace, expected availability timer, exception alerts.
+- Fraud/Scam Triage Workflow:
+  guided intake, severity routing, freeze/claim workflow, SLA tracking.
+- Collections Transparency Pack:
+  debt verification packet, communication controls, audit trail.
+- Account Lifecycle Guardrails:
+  opening, closing, payoff, and state-transition clarity.
+- Point to make: each recommendation maps to observed complaint patterns.
+
+Slide 25 - Conclusion
+- CFPB complaint data can work as market-intelligence signal.
+- Complaint patterns reveal where escalation risk concentrates.
+- Model features help translate raw text into product themes.
+- Recommendations should be validated with live customer research and business metrics.
+- Main caveat: complaint-channel evidence, not full-market proof.
+
+Slide 26 - Learnings
+- Complaints are structured signals, not just negative feedback.
+- Strong model results matter most when translated into decisions.
+- Key themes: billing clarity, dispute friction, lifecycle breaks, fraud/scam handling, expectation gaps.
+- Project learning: analytics becomes more valuable when it connects to product strategy.
+
+Slide 27 - Q&A
+- Thank the audience.
+- If asked about limitations:
+  CFPB channel only, fintech proxy cohorts, dataset-specific model results.
+- If asked what to build first:
+  Payment Assurance Layer or Fraud/Dispute Fast-Lane.
+- If asked about model meaning:
+  decision-support signal, not causal proof.
+- If asked about next step:
+  validate recommendations with product experiments, customer interviews, and live KPIs.

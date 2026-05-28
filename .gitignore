@@ -1,0 +1,38 @@
+# Large data files — download from Kaggle instead
+master_customer_behavior_v3-1.csv
+master_customer_behavior_clean.csv
+output_optional_nlp_topic_clusters.csv
+
+# Generated temp folder
+temp_trash/
+
+# Duplicate nested folder
+predictive/predictive/
+
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Presentation deck (large binary — share separately)
+*.pptx
+
+# Report source file — PDF is the canonical version
+*.docx
+
+# IDE
+.vscode/
+.idea/

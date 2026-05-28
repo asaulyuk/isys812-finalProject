@@ -1,0 +1,182 @@
+[
+  {
+    "feature": "product__product_service_Mortgage",
+    "weight": 1.980845916330384
+  },
+  {
+    "feature": "product__product_service_Debt collection",
+    "weight": 1.9734777376929735
+  },
+  {
+    "feature": "product__product_service_Bank account or service",
+    "weight": 1.8987680785201788
+  },
+  {
+    "feature": "tfidf__credit",
+    "weight": 1.5569412949417245
+  },
+  {
+    "feature": "product__product_service_Credit reporting",
+    "weight": 1.506814321756809
+  },
+  {
+    "feature": "tfidf__billing",
+    "weight": 1.2918796456058124
+  },
+  {
+    "feature": "tfidf__delinquent",
+    "weight": 1.2035147615774147
+  },
+  {
+    "feature": "tfidf__delinquent account",
+    "weight": 1.2035147615774147
+  },
+  {
+    "feature": "tfidf__credit card",
+    "weight": 1.109852228076467
+  },
+  {
+    "feature": "tfidf__fee",
+    "weight": 1.0483266023294093
+  },
+  {
+    "feature": "tfidf__disputes",
+    "weight": 0.9963590935140478
+  },
+  {
+    "feature": "tfidf__billing disputes",
+    "weight": 0.9963590935140478
+  },
+  {
+    "feature": "product__product_service_Consumer Loan",
+    "weight": 0.9223079758122333
+  },
+  {
+    "feature": "tfidf__issues",
+    "weight": 0.9070448788072991
+  },
+  {
+    "feature": "tfidf__transaction",
+    "weight": 0.9024020100509846
+  },
+  {
+    "feature": "tfidf__customer",
+    "weight": 0.8860438642817767
+  },
+  {
+    "feature": "tfidf__opening closing",
+    "weight": 0.8133995124504044
+  },
+  {
+    "feature": "tfidf__opening",
+    "weight": 0.8133995124504044
+  },
+  {
+    "feature": "product__product_service_Student loan",
+    "weight": 0.77206524106535
+  },
+  {
+    "feature": "tfidf__loan",
+    "weight": 0.7674590139258958
+  },
+  {
+    "feature": "tfidf__rewards",
+    "weight": 0.7384279669614275
+  },
+  {
+    "feature": "tfidf__card",
+    "weight": 0.7218965998533867
+  },
+  {
+    "feature": "tfidf__rate",
+    "weight": 0.7038155988797993
+  },
+  {
+    "feature": "tfidf__managing opening",
+    "weight": 0.6892129214781447
+  },
+  {
+    "feature": "tfidf__closing account",
+    "weight": 0.6892129214781447
+  },
+  {
+    "feature": "tfidf__apr rate",
+    "weight": 0.6846759483398727
+  },
+  {
+    "feature": "tfidf__apr",
+    "weight": 0.6846759483398727
+  },
+  {
+    "feature": "tfidf__managing",
+    "weight": 0.6197088754215448
+  },
+  {
+    "feature": "tfidf__advertising",
+    "weight": 0.6097405727777835
+  },
+  {
+    "feature": "tfidf__marketing",
+    "weight": 0.6097405727777835
+  },
+  {
+    "feature": "tfidf__advertising marketing",
+    "weight": 0.6097405727777835
+  },
+  {
+    "feature": "tfidf__account delinquent",
+    "weight": 0.6017573807887073
+  },
+  {
+    "feature": "tfidf__debt",
+    "weight": 0.577706415742443
+  },
+  {
+    "feature": "tfidf__protection",
+    "weight": 0.5582817277257964
+  },
+  {
+    "feature": "tfidf__determination",
+    "weight": 0.5453577348618981
+  },
+  {
+    "feature": "tfidf__determination credit",
+    "weight": 0.5453577348618981
+  },
+  {
+    "feature": "tfidf__credit determination",
+    "weight": 0.5453577348618981
+  },
+  {
+    "feature": "tfidf__late",
+    "weight": 0.5447316767929599
+  },
+  {
+    "feature": "tfidf__late fee",
+    "weight": 0.5447316767929599
+  },
+  {
+    "feature": "tfidf__fee credit",
+    "weight": 0.5241633011647047
+  },
+  {
+    "feature": "tfidf__payoff process",
+    "weight": 0.5091861135913662
+  },
+  {
+    "feature": "tfidf__payoff",
+    "weight": 0.5091861135913662
+  },
+  {
+    "feature": "tfidf__transaction issue",
+    "weight": 0.5050028915425077
+  },
+  {
+    "feature": "tfidf__issue",
+    "weight": 0.5050028915425077
+  },
+  {
+    "feature": "tfidf__transaction issues",
+    "weight": 0.498924751511341
+  }
+]
