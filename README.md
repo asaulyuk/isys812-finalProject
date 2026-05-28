@@ -129,10 +129,6 @@ Strategic + operational recommendations tied to signal clusters
 
 ## Team
 
-| Name | Role |
-|---|---|
-| Marko Asaulyuk | Analysis, modeling, dashboard, prescriptive strategy |
-| Hunsa Tiwana | Analysis, report, presentation |
-| Jason Tate | Analysis, report, presentation |
+Marko Asaulyuk · Hunsa Tiwana · Jason Tate
 
 SFSU ISYS 812 · Spring 2026
