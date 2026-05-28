@@ -166,7 +166,7 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Run repeated 10/90 random-sampling security model")
     ap.add_argument("--input", default="master_customer_behavior_clean.csv")
     ap.add_argument("--out-dir", default="predictive/security_sampling_model")
-    ap.add_argument("--report-path", default="final_handoff/security_sampling_bias_check.txt")
+    ap.add_argument("--report-path", default="deliverables/security_sampling_bias_check.txt")
     ap.add_argument("--original-metrics", default="predictive/output_escalation_model/metrics.json")
     ap.add_argument("--repeats", type=int, default=10)
     ap.add_argument("--train-size", type=float, default=0.10)

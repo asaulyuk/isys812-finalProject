@@ -84,7 +84,7 @@ WHAT THIS PROJECT ALREADY DELIVERS (DESCRIPTIVE / DIAGNOSTIC)
 • descriptive/descriptive_analysis.ipynb + descriptive/run_descriptive_analysis.py — exploration and stats
 • streamlit_dashboard_app.py — MI views (customer_action, formal complaint %, company, issue, product, time)
 • Optional: predictive/run_optional_nlp_topic_clusters.py — extra topic-style labels
-• final_handoff/ — final report, source bundle, presentation deck, and handoff notes
+• deliverables/ — final report, source bundle, presentation deck, and handoff notes
 • temp_trash/ — generated caches/checkpoints/system files parked for review before deletion
 
 

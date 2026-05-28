@@ -83,7 +83,7 @@ Folders
 descriptive/     Notebooks + run_descriptive_analysis.py
 predictive/      topic clusters + escalation model scripts (see predictive/README.txt)
 prescriptive/    Prescriptive recommendation docs and backlog
-final_handoff/   Final report, source bundle, presentation, and handoff notes
+deliverables/   Final report, source bundle, presentation, and handoff notes
 temp_trash/      Generated caches/checkpoints/system files moved out of the main project tree
 
 
@@ -124,7 +124,7 @@ render.yaml         — Render.com deploy settings
 
 Final handoff
 -------------
-final_handoff/presentations/Finalpresentation.pptx
+deliverables/presentations/Finalpresentation.pptx
   Final presentation deck, moved from the project root to keep deliverables together.
 
 

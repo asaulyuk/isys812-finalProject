@@ -2,7 +2,7 @@
 
 **Team:** Marko Asaulyuk · Hunsa Tiwana · Jason Tate — SFSU ISYS 812, Spring 2026
 
-**Report:** [isys814-finalProjectReport_group2.pdf](final_handoff/isys814-finalProjectReport_group2.pdf) · **Sources:** [submission_sources_group2/](final_handoff/submission_sources_group2/)
+**Report:** [isys814-finalProjectReport_group2.pdf](deliverables/isys814-finalProjectReport_group2.pdf) · **Sources:** [submission_sources_group2/](deliverables/submission_sources_group2/)
 
 ---
 
@@ -85,7 +85,7 @@ Direct Streamlit: `streamlit run streamlit_dashboard_app.py`
 │   ├── executive_one_pager.md
 │   └── prioritized_backlog.csv
 │
-└── final_handoff/                 # Report, presentation, submission bundle
+└── deliverables/                 # Report, presentation, submission bundle
     ├── isys814-finalProjectReport_group2.pdf
     ├── submission_sources_group2/
     └── isys812_report_core_inputs.md

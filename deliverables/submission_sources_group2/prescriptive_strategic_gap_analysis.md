@@ -12,4 +12,4 @@ This file captures the strategic prescriptive layer used in the master brief Sec
 
 ## Canonical version
 For the integrated report-ready version, use:
-- `final_handoff/report_and_presentation_master.md` (Section 4.5)
+- `deliverables/report_and_presentation_master.md` (Section 4.5)
