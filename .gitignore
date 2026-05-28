@@ -30,6 +30,9 @@ env/
 # Presentations and internal materials
 deliverables/presentations/
 
+# Claude Code settings (may contain local credentials)
+.claude/
+
 # IDE
 .vscode/
 .idea/

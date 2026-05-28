@@ -1,8 +1,7 @@
 ISYS 812 — Where the money is, what’s done, what’s next
 =======================================================
 
-Use this file as the hook for presentations and future work: predictive and
-prescriptive steps should tie back to the “money” bullets below, not generic ML.
+
 
 
 COMMITTED SCOPE — FINANCE / FINTECH MI
