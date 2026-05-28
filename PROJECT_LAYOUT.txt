@@ -19,4 +19,4 @@ Run examples (from repo root):
 
 Dashboard: streamlit_dashboard_app.py and launch_dashboard.py stay at the repo root.
 
-Presentation deck: deliverables/presentations/Finalpresentation.pptx.
+Report: deliverables/isys814-finalProjectReport_group2.pdf
