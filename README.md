@@ -2,7 +2,7 @@
 
 **Team:** Marko Asaulyuk · Hunsa Tiwana · Jason Tate — SFSU ISYS 812, Spring 2026
 
-**[View Report (PDF)](https://asaulyuk.github.io/isys812-finalProject/deliverables/isys814-finalProjectReport_group2.pdf)** · **Sources:** [submission_sources_group2/](deliverables/submission_sources_group2/)
+**[View Report (PDF)](https://asaulyuk.github.io/isys812-finalProject/deliverables/isys814-finalProjectReport_group2.pdf)** · **Sources:** [submission_sources_group2/](https://github.com/asaulyuk/isys812-finalProject/tree/main/deliverables/submission_sources_group2)
 
 ---
 
